@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {padding-top: 50px}
+    </style>
+</head>
+<body>
+<!--<input type="text" id="txtValue"/>-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array()"/>-->
+
+<!--<input type="button" id="btnDisplay" value="Display" onclick="display_array()"/>-->
+<!--<div id="result"></div>-->
+<!--<script>-->
+<!--    let x = 0;-->
+<!--    let array = Array();-->
+<!--    function add_element_to_array(){-->
+<!--        array[x] = document.getElementById("txtValue").value;-->
+<!--        alert("Element: " + array[x] + "Added at index " + x);-->
+<!--        x++;-->
+
+<!--        document.getElementById("txtValue").value = "";-->
+<!--    }-->
+<!--    function display_array(){-->
+<!--        let e = "<hr/>";-->
+<!--        for (let i = 0; i < array.length; i++) {-->
+<!--            e += "Element" + i + " = " + array[i] + "<br/>";-->
+<!--        }-->
+<!--        document.getElementById("result").innerHTML = e;-->
+<!--    }-->
+<!--</script>-->
+<!--<input type="text" id="txtValue">-->
+<!--&lt;!&ndash;them phan tu vao mang. su dung the input them su kien onclick cho button goi den ham add_element_to_array()&ndash;&gt;-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="add_alement_to_array()">-->
+<!--&lt;!&ndash;hien thi mang.dung su kien onclick cho button value"display" goi den ham display_array()&ndash;&gt;-->
+<!--<input type="button" id="btnDisplay" value="Add" onclick="display_array()">-->
+<!--<div id="result"></div>-->
+<!--<script>-->
+<!--    let x = 0;-->
+<!--    let array = Array();-->
+<!--    function add_alement_to_array(){-->
+<!--        array[x] = document.getElementById("txtValue").value;-->
+<!--        alert("Element: "+ array[x] + "Added at index " + x);-->
+<!--        x++;-->
+<!--        // truong van ban sẽ bị xóa, giúp người dùng nhaapj giá trị mới mà ko cần phải xóa giá trị trước-->
+<!--        document.getElementById("txtValue").value = "";-->
+<!--    }-->
+<!--    function display_array(){-->
+<!--        let e = "<hr/>"-->
+<!--        for (let i = 0; i < array.length; i++) {-->
+<!--            e += "Element" + i + "=" + array[i] + "<br/>";-->
+<!--        }-->
+<!--        document.getElementById("result").innerHTML = e;-->
+<!--    }-->
+
+<!--</script>-->
+<script>
+let numbers = [-3, 5, 1, 8, 9, 4];
+let max = numbers[0];
+let index = 0;
+for (let i = 0; i < numbers.length; i++) {
+if(numbers[i] > max){
+max = numbers[i];
+index = i;
+}
+}
+alert("max: " + max + " at position " + index);
+</script>
+</body>
+
+</html>
